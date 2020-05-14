@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<MPD mediaPresentationDuration="PT1M2.154S" minBufferTime="PT8.06S" profiles="urn:mpeg:dash:profile:isoff-live:2011" type="static" xmlns="urn:mpeg:dash:schema:mpd:2011">
+  <!-- Created with Bento4 mp4-dash.py, VERSION=2.0.0-634 -->
+  <Period>
+    <!-- Video -->
+    <AdaptationSet maxHeight="720" maxWidth="1280" mimeType="video/mp4" segmentAlignment="true" startWithSAP="1">
+      <SegmentTemplate initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1" timescale="90000">
+        <SegmentTimeline>
+          <S d="737000"/>
+          <S d="78122"/>
+          <S d="884400" r="4"/>
+          <S d="356708"/>
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation bandwidth="704317" codecs="avc1.640020" frameRate="45000/737" height="720" id="video/avc1" scanType="progressive" width="1280"/>
+    </AdaptationSet>
+    <!-- Audio -->
+    <AdaptationSet lang="en" mimeType="audio/mp4" segmentAlignment="true" startWithSAP="1">
+      <SegmentTemplate initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1" timescale="48000">
+        <SegmentTimeline>
+          <S d="392659"/>
+          <S d="41984"/>
+          <S d="472064"/>
+          <S d="471040"/>
+          <S d="472064" r="1"/>
+          <S d="471040"/>
+          <S d="190464"/>
+          <S d="71680"/>
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation audioSamplingRate="48000" bandwidth="64691" codecs="mp4a.40.2" id="audio/en/mp4a">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
